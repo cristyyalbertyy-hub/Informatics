@@ -1,0 +1,60 @@
+Term: Data Mining,"Definition: The exploration of large amounts of data to identify valid, novel, and potentially useful patterns and relationships."
+What is the alternative term used in the text to refer to data mining techniques?,Data dipping.
+What is the primary goal of Knowledge Discovery in Databases (KDD)?,To identify understandable patterns and knowledge within large datasets.
+Name the four phases of the data mining process described in the healthcare text.,"1. Problem identification, 2. Data exploration, 3. Pattern discovery, 4. Knowledge deployment."
+"In the context of data mining, what defines the 'Problem Identification' phase?",Defining the objectives and requirements of the process and understanding the problem to be solved.
+What activities occur during the 'Data Exploration' phase of data mining?,"Data access, cleansing, sampling, and transformation to identify relevant variables."
+A data mining model is comprised of a mining structure and a(n) _____.,Algorithm
+What is the purpose of a 'Data Warehouse' in a healthcare organisation?,"To act as a central repository for all of an organisation's data, making it available for data mining."
+How does a 'Data Mart' differ from a 'Data Warehouse'?,A data mart is a smaller database that houses data for a specific unit or division rather than the entire institution.
+Term: Clustering Analysis,Definition: An unsupervised learning process for partitioning a set of objects into groups where members are more similar to each other than to those in other groups.
+Why is clustering considered an 'undirected' knowledge discovery technique?,Because it is used to discover internal structures in data without pre-defined classes or outcomes.
+What is 'Neural Networks' in the context of data mining tools?,A technique used to identify patterns by mimicking the way the human brain processes information.
+Define 'Rule Induction' as a data mining technique.,The process of extracting 'if-then' rules from a dataset based on statistical significance.
+What is the '$k$-nearest neighbor' method?,A technique that classifies each record in a dataset based on the characteristics of a select number of similar surrounding records.
+Concept: Bagging,Definition: The use of voting and averaging in predictive data mining to synthesise predictions from multiple models or different data sets.
+What is 'Stacking' (or stacked generalisation)?,A technique that synthesises the predictions from several different models to improve accuracy.
+"In data mining, what does 'Scoring' refer to?",Applying a model developed from a known outcome to a new situation where the outcome is unknown.
+What is 'Drill-down' capability in a data warehouse?,"The ability of a user to view information at lower, more detailed levels of the database."
+Define 'Text Mining'.,The analysis of unstructured text files by extracting key words or phrases to identify trends or patterns.
+What is Online Analytic Processing (OLAP)?,"A tool used to generate different multidimensional views of data, allowing for complex analysis and 'slicing and dicing' of information."
+Term: Brushing,Definition: A technique where a user manually chooses specific data points on an interactive display to visualise them in $2$D or $3$D plots.
+How can data mining be used to detect healthcare fraud?,By using predictive analytics and artificial intelligence to identify unusual patterns in insurance claims.
+What is the 'Big Data to Knowledge' (BD2K) initiative?,An NIH project launched in $2013$ to support tools that maximise the integration of big data into biomedical research.
+"In healthcare data mining, what is the 'Master Patient Index' used for?","To allow record sharing across different regions or settings, facilitating integrated data mining."
+What ethical requirement must be met when using private health information for data mining?,The data must be de-identified to maintain patient confidentiality.
+Define 'Anonymity' in the context of e-health data management.,Ensuring that users of aggregate data cannot access a subject's identity unless specifically authorised.
+What is 'Temporal Event Analysis' in EHR data mining?,A retrospective look at clinical data to discover patterns in the sequence of treatments or medications that impact outcomes.
+What does 'Process Mining' help health experts understand?,The actual execution of clinical or administrative processes and their conformance with medical guidelines.
+How can data mining support public health surveillance?,By tracking the global spread of disease and identifying unusual disease clusters in real-time.
+What is the role of an 'Inference Engine' in a data-mining-supported decision support system?,It processes user responses against the knowledge base to generate preliminary diagnoses.
+Concept: Case Repository,"Definition: A database, often implemented as a data warehouse, that stores clinical sessions for future training or data mining purposes."
+Why is 'Data Integrity' crucial for effective data mining?,Because bad or 'dirty' data (duplicate or incomplete records) yield flawed and unmeaningful results.
+Which technique is used to find relationships among data elements when the data are incomplete or redundant?,Rough set analysis.
+How does data mining assist in 'Knowledge Replenishment'?,By using automated machine learning to adapt to dynamic changes in clinical knowledge over time.
+What are 'Concept Hierarchies' in the context of clustering analysis?,Structured levels of description spaces that allow data to be viewed at different levels of abstraction.
+Name one benefit of mining user actions in an e-community.,"It can provide early warnings (e.g., flu outbreaks) based on regional search and navigation patterns."
+"In a star schema used for data mining, what does the 'Fact Table' typically contain?","Quantitative data or session information, while dimensions represent key factors like demographics."
+What is the specific use of 'Clustering Methods' for epidemiologists?,To search for hidden patterns and identify unusual clusters of disease caused by environmental or social factors.
+What is the 'action complement' of bioinformatics that uses data-analytical methods to study biological systems?,Computational biology.
+How does data mining improve 'Evidence-Based Medicine'?,By extracting the best current evidence from massive clinical databases to guide individual patient care decisions.
+What is the focus of 'Translational Bioinformatics'?,"Integrating biological and clinical data to generate new knowledge for scientists, clinicians, and patients."
+Why is 'Metadata' included in a processed data mining model?,"To store the name, definition, server location, and the specific algorithm used to build the model."
+What is 'Navigational Mining'?,The analysis of user navigation decisions on websites to extract knowledge about trends or interests.
+"In the 'Foundation of Knowledge' model, data mining primarily supports which process?",Knowledge generation.
+How can data mining help reduce 'Medical Errors'?,By identifying patterns in drug ordering that lead to adverse events and suggesting safer alternatives.
+What is the significance of the '$k$' in $k$-nearest neighbor analysis?,It represents the pre-defined number of similar neighbors used to classify a specific record.
+Define 'Case-based reasoning' as a data mining tool.,An analogical reasoning method that solves new problems by referencing similar past cases.
+How does 'Genetic Algorithms' contribute to data mining?,They use mechanisms inspired by biological evolution (like mutation and crossover) to find optimal solutions in data.
+What does the term 'Dirty Data' refer to in database management?,"Records that are duplicate, incomplete, or outdated, which can lead to flawed statistical conclusions."
+"According to the text, what is the main reason for an organisation to acquire a data warehouse?",To perform data mining.
+What is 'Bayesian Network' analysis used for in hybrid DSS?,To support knowledge integration by combining diagnostic knowledge from human experts and data mining.
+"In clustering, what is the 'Description Space'?",The set of attributes or variables used to characterise the objects being partitioned.
+How can 'Association Rules' be inferred from e-community user actions?,By tracking the sequence of documents or web pages a user visits during a single session.
+What is 'Incremental Learning' in e-health DSS?,The ability of a system to adaptively acquire new knowledge by reusing structures from previous discovery activities.
+The ability to 'slice and dice' data in a warehouse refers to using _____ tools.,OLAP (Online Analytical Processing)
+What is the 'Master Patient Database' used for in integrated e-clinical support systems?,To provide a real-time history of patients accessible across a distributed clinical setting for trend analysis.
+How does data mining benefit 'E-Disease Management'?,By assessing risks and measuring medical performance against clinical and economic benchmarks.
+What is the purpose of 'Data Cleansing' before the mining process?,"To remove errors and inconsistencies, ensuring the accuracy and validity of the final results."
+"In the context of the CDC report, how are GIS and data mining related?",Data mining is used to investigate hazard diffusion patterns within massive spatial datasets.
+Define 'Prescriptive Analytics' as used in fraud detection.,Analytics that not only predict outcomes but also suggest specific actions to resolve issues like fraudulent claims.

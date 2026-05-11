@@ -1,0 +1,50 @@
+What is the primary purpose of a Relational Database Management System (RDBMS)?,"It is software used to structuredly manage, organise, and store data within relational databases."
+"In database terminology, what is the alternative name for 'columns'?",Fields.
+"In database terminology, what are the two alternative names for 'rows'?",Records or tuples.
+What is the function of a 'primary key' in a database record?,It acts as a unique identifier for that specific record.
+"The characteristic of data being whole, complete, correct, and consistent is known as _____.",Data integrity
+"What term describes a database containing errors such as duplicate, incomplete, or outdated records?",Dirty data.
+What does the acronym SQL stand for?,Structured Query Language.
+Which SQL command is used to extract data from a database?,SELECT.
+Which SQL command is used to modify existing information within a database?,UPDATE.
+Which SQL command is used to remove specific data from a database?,DELETE.
+Which SQL command is used to add new data to a database?,INSERT.
+"In an SQL query, which clause is used to specify selection criteria to restrict results?",WHERE.
+What is the meaning of the asterisk symbol (*) when used in a SELECT statement?,It is used to select all columns from the specified table.
+Concept: Relational Database,Definition: A database design that stores data in tables and uses relationships to eliminate data duplication.
+What is a 'query' in the context of database management?,A search or question asked of the database to retrieve specific information.
+A collection of related records in a database is referred to as a _____.,Data file
+How does a Data Mart differ from a Data Warehouse?,"A Data Mart is a smaller subset of a Data Warehouse, typically focused on a single department or hospital site."
+What is the purpose of an 'E-R schema' in informatics?,It is a diagram or plan used to design and represent the logical structure of a database.
+What is the function of a 'clinical data dictionary'?,It is a centralized repository that describes the clinical variables and predefined fields within a database.
+The electronic database that holds both clinical data and the clinical data dictionary is called the _____.,Clinical data repository
+"In a Star Schema, what is the role of the 'fact table'?",It provides the core session or transactional information for analysis.
+"In a Star Schema, what do 'dimensions' represent?","They represent key attributes or factors, such as patient demographics or symptoms, used to categorise facts."
+What was the original name of SQL before it was shortened?,SEQUEL (Structured English Query Language).
+Which two organisations maintain the standards for the SQL language?,ISO (International Organization for Standardization) and ANSI (American National Standards Institute).
+"In relational databases, what are 'tables' considered to be?",They are the fundamental database objects used to store related data.
+What is an 'integrated view' in the context of e-health data integration?,It is a virtual dataset composed of joined data sets from different relations or tables.
+The security issue where a collection of datasets is more sensitive than individual sets is called the _____.,Aggregation problem
+What does an 'interoperable database' system store in a healthcare context?,"It stores linked data regarding standards, provider identifiers, and clinical/administrative health information."
+What is the purpose of 'data cleansing' before performing data mining?,It prepares and verifies the data to ensure accuracy and remove errors that could yield bad results.
+Term: SQL SELECT command,Definition: A command used to extract specific data from database tables based on defined criteria.
+"According to Covvey, what is the primary use of an Administrative Data Warehouse (ADW)?",It is used by managers for organisational decision-making.
+"According to Covvey, what is the primary use of a Clinical Data Repository (CDR)?",It is used by healthcare providers for clinical decision-making.
+"In informatics, what does 'data acquisition' refer to?",The input phase of the health information processing system where data is first gathered.
+What is the 'Structured Query Language' primarily classified as?,It is a database querying language rather than a programming language.
+What informatics tool is used to uncover hidden patterns and relationships within massive healthcare databases?,Data mining.
+Which database structure allows clinicians to 'slice and dice' data to discover diagnostic patterns?,A star schema-based data warehouse.
+What defines a 'Virtual Medical Record' (VMR) as compared to a standard EHR repository?,It assembles patient records from various sources in real-time without using a single centralized repository.
+What are the three core management activities in a health information processing system?,"Storage, classification, and updating of data."
+"In SQL, which keyword is used to specify the table from which data should be retrieved?",FROM.
+"In a relational database, what is the result of 'joining' two data sets?",It creates an integrated view containing attributes from both sets.
+How does a relational database eliminate the risk of data entry errors associated with separated files?,By eliminating data duplication through linked tables.
+The process of extracting data from sizable datasets to discover applicable practice knowledge is called _____.,Data mining
+What are the two primary components of an SQL table?,Fields (columns) and records (rows).
+What is a 'clinical database' specifically designed to store?,A collection of related patient records that can be queried to extract clinical information.
+What term describes the application of database technology to track indicators like medication purchases for bioterrorism detection?,Electronic surveillance.
+"In the context of database security, what is 'read-only' access?",An access channel that allows users to view data but prevents them from making any changes.
+What is the role of a database 'interface engine'?,It filters and translates data from multiple sources into a common format for the central repository.
+"According to the informatics model, what are the two main forms of 'data output'?",Retrieval and presentation.
+What is the 'semantic web' approach in database modelling?,An approach that emphasises the meaning (semantics) of data rather than just its syntax.
+Why is 'data integrity' critical when processing information to inform healthcare practice?,Because low-quality or incomplete data leads to flawed information that is not meaningful.

@@ -1,0 +1,55 @@
+"According to the UK's National Health Service (NHS), what is the primary distinction of an Electronic Health Record (EHR) compared to an Electronic Patient Record (EPR)?","An EHR contains longitudinal records of patient experiences from birth to death across all providers, whereas an EPR is institution-based."
+"In the Canadian perspective provided by ACHI-OHIH, how is an 'Electronic Patient Record' (EPR) defined?",The accumulated electronic records of a single patient's encounters with a specific caregiver over time.
+What term does the Canadian ACHI-OHIH use for selected electronic data on a single patient for a specific episode of care?,Electronic incidental records.
+The Institute of Medicine (IOM) identifies eight essential components of an EHR; which component involves the ability to manage laboratory and radiology reports electronically?,Results management.
+"Which IOM component of an EHR allows clinicians to enter medication, nursing, and supply orders directly into the system?",Order entry management.
+What is the primary function of the 'Decision Support' component within an EHR?,"Providing computer reminders and alerts to improve diagnosis, drug dosing, and adherence to clinical guidelines."
+The EHR component 'Electronic Communication and Connectivity' focuses on what aspect of healthcare?,"Secure messaging and information exchange between team members, care partners, and patients across different settings."
+Which EHR component provides tools like home monitoring and health education to improve the management of chronic conditions?,Patient support.
+What is the purpose of the 'Administrative Processes' component in an EHR system?,"Facilitating electronic scheduling, billing, and insurance eligibility verification to improve hospital efficiency."
+"Which EHR function supports public health tracking and internal quality improvement through standardised, machine-readable data?",Reporting and population health management.
+What was the primary goal of the Health Information Technology for Economic and Clinical Health (HITECH) Act of 2009?,To stimulate the adoption of electronic health records and supporting technology through monetary incentives and stricter privacy provisions.
+"In the context of the HITECH Act, what does 'Meaningful Use' entail?","Using EHRs in a coded format to track clinical conditions, coordinate care, and report quality measures."
+What is the definition of 'Interoperability' in health information systems?,The ability of different systems to exchange and use electronic health information without special effort by the user.
+Which level of interoperability involves the simple reception of data from one system to another without interpretation?,Foundational interoperability.
+What distinguishes 'Structural Interoperability' from foundational interoperability?,It depends on the consistency of clinical terminology and the preservation of the data's meaning during exchange.
+"Which level of interoperability is the highest, enabling seamless machine-to-machine data exchange through standardised terminologies?",Semantic interoperability.
+What does the 'Level Seven' in the organisation name HL7 refer to?,"The application level of the Open Systems Interconnection (OSI) model, which handles data exchange structuring."
+What is the role of Health Level Seven (HL7) in EHR systems?,"It provides a framework and standards for the exchange, integration, and retrieval of electronic health information."
+"In EHR technology, what is a 'Clinical Data Dictionary'?","A centralised repository describing the content of a database, organised into files with predefined clinical variables."
+What is the 'Clinical Data Repository' component of an EHR system?,The actual electronic database that houses the clinical data and the clinical data dictionary.
+How does a 'Virtual Medical Record' (VMR) differ from a standard centralised EHR?,It assembles a patient's record from various sources as needed rather than drawing from a single centralised repository.
+What is the primary benefit of 'Virtual Patient Records' (VPR) for telemedicine practitioners?,It allows media-rich graphical patient records from multiple distributed sources to be viewed by multiple users at different sites in real-time.
+Why is the use of XML (eXtensible Markup Language) often preferred over HTML for EHR data exchange?,"XML allows for the creation of intelligent, structured data exchange that can support complex transactions and user queries."
+What is a major hurdle in the implementation of EHRs according to the source material?,"High financial costs, technical complexity, and resistance from health professionals."
+How can EHRs improve patient safety regarding prescriptions?,By using automated alerts for drug-drug interactions and eliminating errors caused by illegible handwriting.
+What is the 'Foundation of Knowledge' model's role in health informatics?,"It serves as the conceptual framework for understanding how data, information, knowledge, and wisdom are used in practice."
+"In the DIKW paradigm used in informatics, what does the 'W' represent?",Wisdom.
+Term: Electronic Medical Record (EMR),"Definition: A digital version of a patient's paper chart in a clinician's office, primarily used for diagnosis and treatment within one organisation."
+Which standardised coding system is commonly used in EHRs for classifying diseases and health problems?,The International Classification of Diseases ($ICD$).
+What is the function of an 'Interface Engine' in an EHR system?,It filters and translates data from multiple sources into a common format for deposit into the EHR repository.
+How do EHRs facilitate 'Information Therapy' for consumers?,"By providing personalised, high-quality health information that empowers patients to manage their own well-being."
+What is a 'Personal Health Record' (PHR)?,An electronic record of health-related information that is managed and controlled by the individual patient.
+The 'Continuity-of-Care Document' (CCD) uses which organisation's standards to ensure it is both human and machine-readable?,HL7 (Health Level Seven).
+What role does the National Institute of Standards and Technology (NIST) play in the US EHR landscape?,It develops the standards and test procedures used to certify EHR vendors under the HITECH Act.
+"In terms of data management, what is 'Data Mining'?",The exploration of large datasets to identify patterns that provide new insights or understandings of clinical situations.
+"Which EHR tool allows patients to access their own records, view lab results, and communicate with providers via a secure website?",A patient portal.
+What is 'CPOE' in the context of EHR functionality?,Computerised Provider Order Entry.
+How does 'Electronic Data Interchange' (EDI) relate to EHRs?,"It is the traditional method for standardised B2B electronic sharing of transactions, such as claims between providers and payers."
+"According to the text, what is the 'lifeblood' of e-health care?",Electronic Health Records (EHRs).
+What is the purpose of 'Data Tiering' in large health systems like Intermountain?,Creating storage levels based on how frequently or quickly the data needs to be accessed to manage massive data volumes efficiently.
+What is the function of 'Smart Cards' in an e-health environment?,They retain a patient's vital medical information on a portable card that can be retrieved by swiping it through a reader.
+"In EHR security, what is the difference between 'Privacy' and 'Confidentiality'?","Privacy relates to the individual's right to control their information, while confidentiality is the obligation of the provider to protect it."
+Which encryption protocol is commonly used for secure web-based health information exchange between browsers and servers?,Secure Socket Layer (SSL).
+How can EHRs contribute to 'Evidence-Based Medicine' at the point of care?,By integrating clinical decision support tools that link patient data to current best-practice guidelines.
+What is 'Clinical Research Informatics'?,The use of informatics to discover and manage new knowledge through clinical trials and the secondary use of clinical data.
+"In the US, what organisation is the central coordinating body for clinical terminologies used in EHRs?",The National Library of Medicine.
+What defines a 'Qualified EHR' under the HITECH Act?,"An electronic record containing demographic and clinical info, including medical history, capable of supporting decision support and order entry."
+What is 'Electronic Surveillance' in the context of public health EHR applications?,The automated collection and analysis of health data for planning and evaluating public health programs.
+How does 'Remote Patient Monitoring' function within an integrated EHR system?,Patient health status signals are sent to a monitoring centre and recorded directly into the patient's electronic record.
+Which EHR benefit specifically addresses 'update anomalies' common in paper systems?,Eliminating redundant storage of the same information in multiple physical files.
+What is 'Data Integrity' in the context of e-health communications?,Ensuring that health data is not modified or forged while in transit.
+What does a 'Value-Added Network' (VAN) do for EDI transactions?,"It functions like a post office, providing mailboxes where EDI data can be stored and mapped for different users."
+Which EHR component is critical for reducing 'clerical errors' during transcription?,Direct data entry by health practitioners at the point of care.
+What is the primary role of a 'Clearinghouse' in healthcare data exchange?,It provides connectivity by taking claims from providers and reformatting them to meet the standardised formats required by payers.
+Term: Cloud-based EHR,"Definition: An EHR system where the software and data are hosted on external servers and accessed via the internet, reducing local IT infrastructure needs."

@@ -1,0 +1,87 @@
+"In the context of healthcare informatics, what is defined as an individual's right to control the use and dissemination of their personal information?",Information privacy.
+"Which term refers to the procedures, techniques, and technology employed to protect information from accidental or malicious destruction or access?",Security.
+What is the tool or responsibility used for protecting privacy by ensuring personal information is disclosed only as authorised?,Confidentiality.
+"According to the Tan source material, which encryption method uses the same key for both data encryption and decryption?",Symmetric private key cryptography.
+What is the primary challenge associated with symmetric encryption regarding the maintenance of security?,The distribution of keys.
+Which encryption class uses a public key and a private key to allow 'strangers' to share information with both authentication and privacy?,Asymmetric public key cryptography.
+The class of problems dealing with the distribution of keys and certificates in asymmetric encryption is known as _____.,Public key infrastructure (PKI)
+At which layer of the Open System Interconnect (OSI) model does Internet Protocol Security (IPSec) operate?,The network layer.
+Transport Layer Security (TLS) provides security at which layer of the OSI model?,The transport layer.
+Pretty Good Privacy (PGP) is a security protocol that operates at which layer of the OSI model?,The application layer.
+Which security protocol combines symmetric cryptography for session keys with asymmetric cryptography for message transmission?,Pretty Good Privacy (PGP).
+What is the full meaning of the acronym HIPAA in United States healthcare legislation?,Health Insurance Portability and Accountability Act.
+Which 2009 act in the United States enhanced HIPAA protections and provided incentives for the adoption of electronic health records?,The Health Information Technology for Economic and Clinical Health (HITECH) Act.
+"In Canada, which act governs the collection, use, and disclosure of personal information by federal departments?",The Privacy Act.
+What is the Canadian federal legislation that establishes rules for how organisations in the private sector handle personal information?,The Personal Information Protection and Electronic Documents Act (PIPEDA).
+The PIPEDA principle of _____ requires an organisation to designate an individual to be responsible for compliance with privacy principles.,Accountability
+"Under the 'Identifying Purposes' privacy principle, when must an organisation identify why it is collecting personal information?",At or before the time the information is collected.
+Which privacy principle dictates that the collection of personal information must be limited to that which is necessary for the identified purposes?,Limiting Collection.
+"The 'Limiting Use, Disclosure, and Retention' principle states that personal information should only be retained for how long?",As long as necessary for the fulfilment of the identified purposes.
+"Which privacy principle requires personal information to be as accurate, complete, and up-to-date as necessary for its intended use?",Accuracy.
+"Which privacy principle requires organisations to protect personal information against loss, theft, or unauthorised access regardless of the format?",Safeguards.
+The principle of _____ requires organisations to make specific information about their policies and practices readily available to individuals.,Openness
+"According to the 'Individual Access' principle, what right does an individual have regarding their stored personal information?","The right to be informed of its existence, use, and disclosure, and to challenge its accuracy."
+"In e-health informatics, what term describes the theory and practice of integrating electronic health information distributed across different databases?",E-health data integration (e-HDI).
+"In the context of e-HDI, what does an 'aggregation issue' refer to?",Instances where two or more data sets are more sensitive together than they are separately.
+Which specific aggregation type occurs when the sensitivity of data depends on the existing information already at a user's disposal?,Context-dependent aggregation.
+"_____ aggregation occurs when a collection of up to $t$ objects is not sensitive, but a collection greater than $t$ is sensitive.",Quantity-dependent
+Which aggregation type involves sensitivity that arises when information is linked to a particular period of time?,Time-dependent aggregation.
+What is functionality-dependent aggregation?,A situation where sensitive information can be inferred via the presence of other non-sensitive attributes.
+What is the purpose of 'sanitization' in health data management?,Disguising a subject's information to prevent the discovery of their identity.
+Which layer of secrecy in e-health informatics focuses on hiding the actual data and the associations formed during integration?,The content layer.
+Which layer of secrecy focuses on hiding the security rules and policies enforced in e-HDI services?,The description layer.
+"The most restrictive layer of secrecy, which concentrates on hiding the very presence of data from unauthorised users, is the _____ layer.",Existence
+What is the primary objective of a 'Chinese wall' security policy?,To prevent information flows that cause conflicts of interest.
+"In e-health care, what term describes the right of a patient to ensure their medical status does not result in penalty or harm?",Privacy protection.
+What security mechanism prevents unauthorised modification of e-health data sets during transmission?,Data integrity.
+Which e-security feature serves to verify the identity of an authorised user before they access a system?,Authentication.
+What does 'authorization' mean in the context of e-health data integration?,Ensuring that health data can be accessed only by permitted users.
+What is the main advantage of the I-SEE (Integrated Selective Encryption and Data Embedding) scheme for medical images?,It reduces computational complexity compared to full encryption while maintaining high security.
+How does the I-SEE scheme ensure medical images remain unchanged for diagnosis while carrying patient data?,It uses a reversible and lossless data embedding method.
+"In the I-SEE scheme, what operation is often used for efficient enciphering of the combined textual and image data?",The XOR operation.
+"Which term describes a type of malware that replicates itself over and over, eventually taking over a computer's memory?",Virus.
+How does a computer 'worm' differ from a virus?,A worm can replicate itself across a network without the need for human intervention or a host file.
+What is 'social engineering' in the context of electronic security?,Tricking individuals into revealing sensitive information like passwords or access codes.
+"Which security threat involves tricking a user into loading an infected physical device, such as a USB drive, onto their computer?",Baiting.
+What is the term for a malicious attempt to acquire sensitive information by masquerading as a trustworthy entity in electronic communication?,Phishing.
+A phishing attack that specifically targets a particular individual or organisation is known as _____.,Spear phishing
+What is 'shoulder surfing'?,Watching over someone's shoulder to steal their password or sensitive information as they enter it.
+Which security tool acts as a barrier between a trusted internal network and untrusted external networks like the Internet?,A firewall.
+What is the function of a 'proxy server' regarding network security?,"It acts as an intermediary for requests from clients seeking resources from other servers, often masking the user's identity."
+"Which authentication method uses unique biological traits, such as fingerprints or retinal prints, to identify users?",Biometrics.
+What is the term for an attack that exploits a previously unknown software vulnerability before a patch is available?,Zero day attack.
+A _____ attack attempts to crack a password or encryption key by systematically trying every possible combination.,Brute force
+What is 'malware'?,Malicious software designed to infiltrate or damage a computer system without the owner's consent.
+Which type of malware restricts access to a computer system or data until a sum of money is paid?,Ransomware.
+"In the context of the HITECH Act, what is a 'breach of confidentiality'?","An unauthorised acquisition, access, use, or disclosure of protected health information."
+What term refers to the data trail left by the use of electronic devices that can be checked for unauthorised access?,Audit trail.
+What is 'anonymity' in e-health informatics?,A state where users provided with aggregate data cannot access the subject's identity without separate authorisation.
+"Under HIPAA, what does 'PHI' stand for?",Protected Health Information.
+Which privacy principle ensures that individuals can check and verify that their information is correct?,Verifiability.
+"In the context of network security, what is 'availability'?",The requirement that a network be accessible and usable upon demand by an authorised entity.
+What is the role of a 'certificate authority' (CA) in a PKI system?,To issue and sign digital certificates that verify the ownership of a public key.
+What is 'integrity' in the context of network information?,The assurance that data has not been altered or destroyed in an unauthorised manner.
+Which security protocol is commonly used by web browsers to obtain confidential information like credit card numbers using private keys?,Secure Socket Layer (SSL).
+"In e-HDI, the process of checking whether CIR (Conflict of Interest Regulation) exists between a user and a view is a key function of _____.",The e-security policy
+What is 'informed consent' in the e-health environment?,The process by which individuals are made fully aware of how their data may be used before agreeing to its processing.
+The 'need-to-know' principle restricts data access based on what criteria?,The specific services or tasks an authorised user must perform.
+Why is data security a major concern in mobile medicine using Bluetooth technology?,The protocol stack is vulnerable to passive eavesdropping and active interference.
+What is the goal of the 'Public Key Infrastructure' (PKI) regarding mobile users?,To ensure confidentiality and verify the authenticity of users in electronic exchanges.
+Which 1998 UK act established privacy and data regulations for handling personal information?,The Data Protection Act 1998.
+"In the context of the Precision Medicine Initiative (PMI), why are privacy and security considered paramount?","The initiative requires correlation of individual information to outcomes, and data is not necessarily de-identified."
+"According to the Mastrian source, what is the 'FAIR' principle in data discovery?","A set of standards ensuring data is Findable, Accessible, Interoperable, and Reusable."
+What is 'syndromic surveillance' in public health informatics?,The use of health-related data to identify clusters of symptoms before a formal diagnosis is made.
+"In e-HDI security, what is 'least privilege'?",A principle requiring that users be given only the minimum level of access necessary to perform their jobs.
+Which security measure involves the use of 'invisible' watermarks to secure electronic medical records?,Data hiding techniques.
+What does 'EPHI' stand for in the context of electronic security?,Electronic Protected Health Information.
+Which privacy concept refers to the responsibility of recipients to disclose information only as authorised?,Confidentiality.
+What is a 'negligent insider' in the context of security breaches?,An authorised user who unintentionally causes a security breach through carelessness or lack of knowledge.
+A _____ is an authorised user who intentionally misuses their access to cause harm or steal information.,Malicious insider
+What is 'scareware'?,"Malicious software that uses social engineering to cause shock, anxiety, or the perception of a threat to manipulate users into buying unwanted software."
+What term describes the process of proving that a user is who they claim to be when accessing a system?,Authentication.
+What is 'spear phishing'?,"A targeted phishing attack aimed at a specific individual, group, or organisation."
+"In e-HDI, why is 'anonymity' alone sometimes insufficient to protect patient privacy?",Users may use data mining techniques to infer identities from non-identifying attributes.
+Which privacy principle requires that an individual be able to challenge an organisation's compliance with privacy requirements?,Challenging Compliance.
+"Under the Safeguards principle, what must be ensured for 'long-lived records' in terms of technology?",That they remain retrievable and readable across generations of software and hardware.
+What is 'right-to-know' in the context of e-health practitioner access?,A concept describing levels of access corresponding to the services a practitioner provides to a specific patient.
+Which Canadian act was revised in 2018 to strengthen personal information protection?,The Personal Information Protection and Electronic Documents Act (PIPEDA).

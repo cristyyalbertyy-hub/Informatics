@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information Processing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">Plan</p>
+        <h1>Information Processing</h1>
+      </div>
+      <p class="header-copy">
+        Choose a class on the left, then open the video, podcast, infographic, or questions.
+      </p>
+    </header>
+
+    <main class="layout">
+      <aside class="tree-panel" aria-label="Classes">
+        <nav id="tree" class="tree"></nav>
+      </aside>
+
+      <section class="content-panel" aria-live="polite">
+        <div id="content" class="content-card">
+          <p class="eyebrow">Welcome</p>
+          <h2>Select a class</h2>
+          <p>
+            Select one of the five classes on the left. Then choose the resource you
+            want to open in this panel.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

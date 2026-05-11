@@ -1,0 +1,75 @@
+What is the primary focus of a Health Management Information System (HMIS)?,Automating clerical tasks and information flow to facilitate organisational planning and administration.
+How does a Health Decision Support System (HDSS) differ from an HMIS?,"It extends cognitive capacity to enhance decisional effectiveness on complex, semi-structured tasks."
+"In the DIKW paradigm, what is the term for 'signals' that represent a 'know-nothing' state?",Data.
+"In the DIKW model, how is 'Information' derived from 'Data'?","By providing context to data to make it useful, organised, and structured."
+"Which level of the DIKW paradigm involves contextual, synthesized understanding?",Knowledge.
+What defines 'Wisdom' within the context of health informatics?,"The integrated and actionable application of knowledge, insight, and experience to determine what is best."
+"According to the Foundation of Knowledge model, what are the four recurring processes used to manage knowledge?","Acquisition, processing, generation, and dissemination."
+Term: Electronic Health Record (EHR).,Definition: A longitudinal record of all patient encounters across all health provider institutions.
+How does a Computer-based Patient Record (CPR) typically differ from an Electronic Patient Record (EPR)?,"A CPR is usually institution-based, whereas an EPR is an enterprisewide system."
+What is the primary purpose of Computerised Physician Order Entry (CPOE)?,"To ensure patient safety by automating orders to be legible, complete, and integrated with decision support."
+"Which specific information system manages reports for blood, body fluid, and tissue samples?",Laboratory Information System (LIS).
+What is the function of a Radiology Information System (RIS)?,"Collecting, storing, and manipulating medical imagery and associated clinical data."
+What does the clinical acronym PACS stand for?,Picture Archiving and Communication System.
+"What is the role of an Admission, Discharge, and Transfer (ADT) system?",It provides a central source for patient demographic and encounter information used by other healthcare systems.
+"In database management, what is the role of 'SQL'?",It is the standard language used to perform queries and manipulate data within a relational database.
+Term: Relational Database Management System (RDBMS).,"Definition: A software system that organises data into tables, records, and fields based on established relationships."
+What is 'Data Mining' in a healthcare context?,Unveiling hidden patterns and complex knowledge from large data sets to aid research or planning.
+Which standard is primarily used for the electronic exchange of clinical data between disparate health systems?,Health Level Seven (HL7).
+What is the advantage of using XML over traditional EDI for healthcare business transactions?,"It provides a low-cost, functional platform for data exchange over the World Wide Web."
+What is the definition of 'Teleconsultation'?,A clinical service that uses telecommunications to allow medical assessment or expertise at a distance.
+How does an 'Intranet' differ from the public Internet in a healthcare organisation?,"It is a private network protected by firewalls, accessible only to authorised internal members."
+What is the function of an 'Extranet' in health informatics?,"Providing secure access to selected private network areas for external partners, such as vendors or insurers."
+How are 'Smart Cards' used in mobile health systems?,They retain a patient's vital medical information for easy retrieval by swiping the card through a reader.
+"In public health informatics, what is the role of a Geographical Information System (GIS)?",Transforming data into stratified information to map disease outbreaks in relation to space and time.
+What does the term 'Knowledge Viability' refer to?,Technology-based applications that offer accessible and timely information to generate new knowledge.
+How is 'Health Informatics' defined in the context of the four building-block sciences?,"The scientific synthesis of computer, information, cognitive, and disciplinary sciences."
+What is the function of 'Clinical Decision Support' (CDS) tools?,Providing computer-based reminders and alerts to assist clinicians in diagnostic and treatment decisions.
+"In the context of health information systems, what is 'Interoperability'?",The ability of different information systems to communicate and exchange data accurately across boundaries.
+What does the 'HITECH Act' incentivise healthcare providers to demonstrate?,Meaningful Use of electronic health records.
+What is the role of 'Administrative Processes' within an EHR system?,"Electronic management of scheduling, insurance validation, billing, and claims processing."
+How does 'Mobile Health' (mHealth) improve clinician efficiency?,"By providing real-time access to patient records, medical alerts, and portable references regardless of location."
+Define 'Biomedical Informatics'.,"The interdisciplinary science of acquiring, structuring, and analysing data to improve human health."
+Concept: Cognitive Science.,Definition: The interdisciplinary study of the mind and intelligence from an information-processing perspective.
+What is the purpose of 'Evidence-Based Medicine' (EBM) within an HIS?,Using clinical protocol reference databases and current research to support diagnostic and treatment decisions.
+What are 'Knowledge Repositories'?,"Electronic collections where knowledge can be analysed, stored, and reused to facilitate dissemination."
+"In the DIKW hierarchy, what type of information is revealed by 'Data'?",Relationships.
+"In the DIKW hierarchy, what type of information is revealed by 'Information'?",Patterns.
+"In the DIKW hierarchy, what type of information is revealed by 'Knowledge'?",Principles.
+"In the DIKW hierarchy, what type of information is revealed by 'Wisdom'?",Direction or principles for future action.
+What is the primary anchor of a 'Learning Healthcare System'?,Patient needs and perspectives.
+Define 'Bioinformatics'.,"The application of computer and information sciences to solve biological problems, particularly in genomics."
+What is the 'Internet of Things' (IoT) in a healthcare environment?,"A network of devices with sensors that communicate directly with other technologies, such as an EHR."
+What is a 'Clinical Database'?,A collection of related patient records stored in a computer system that allows for information querying.
+What is 'Alarm Fatigue'?,The tendency of healthcare workers to ignore or respond slowly to alarms due to an excessive number of false alerts.
+What is the role of an 'Interface Engine' in a centralised EHR system?,Translating data from multiple disparate sources into a common format for repository storage.
+What is a 'Virtual Medical Record' (VMR)?,A system that assembles a patient's record from various sources without using a centralised repository.
+Which US regulation provides the framework for the privacy and security of health data?,Health Insurance Portability and Accountability Act (HIPAA).
+What is 'Open-Source Software' (OSS) in health informatics?,Software with source code that is publicly available for collaborative development and improvement.
+Define 'Triage' in the context of an HIS.,The electronic management and prioritisation of patients based on the severity of their condition.
+What is 'Results Management' as a core EHR functionality?,The electronic capture and viewing of laboratory results and diagnostic imaging reports.
+What does 'Order Entry Management' entail in an EHR?,"The electronic entry and tracking of orders for medications, tests, and other clinical services."
+What is 'Connectivity' in the context of clinical informatics?,On-line communication among healthcare team members and patients across different settings and institutions.
+What is the objective of a public health informatics surveillance system?,Automatically monitoring data like disease case reports and missed work to detect potential outbreaks.
+How does 'E-Prescribing' reduce clinical risk?,By checking for adverse drug interactions and eliminating errors caused by misreading physical handwriting.
+What is 'Health Data Aggregation'?,Combining data sets from disparate health and social databases into integrated views for research or policy.
+"In a relational database, what is a 'Primary Key'?",A unique identifier assigned to each record in a table to ensure data integrity.
+What is the purpose of an 'E-R Schema'?,To provide a conceptual diagram representing the entities and relationships within a database design.
+What is the 'DIKW Paradigm's' contribution to disciplinary science?,It explains the transformation of raw data into functional knowledge and wise clinical decisions.
+How does mHealth facilitate 'Disease Management'?,By allowing patients to self-monitor vital signs and co-manage conditions with professionals remotely.
+Concept: Knowledge Worker.,Definition: An individual who works with information and generates knowledge as a primary product.
+What is the function of the 'Feedback' loop in the Foundation of Knowledge model?,To act on and potentially transform any aspect of the knowledge cycle by stimulating rethink and reflection.
+What is 'Clinical Research Informatics'?,The use of informatics to manage clinical trial data and facilitate the secondary use of clinical data for discovery.
+How does 'Artificial Intelligence' (AI) support health informatics?,By replicating complex human thought processes to provide intelligent clinical decision support.
+"In HIS, what are 'Clinical Practice Guidelines'?",Rules or principles embedded in an EHR to guide providers when determining diagnostic tests or treatments.
+Define 'Patient Empowerment' through informatics.,Providing users with on-line health records and self-directed education to participate actively in care decisions.
+What is the primary benefit of 'Teleradiology' systems?,"Allowing radiologists to review and interpret medical imagery from remote locations, bypassing geographic limits."
+"In a Relational Database Management System (RDBMS), what is a 'Tuple'?",A single row or record within a data table.
+What is the function of 'Medline Plus' as a public health database?,"Providing reliable, consumer-oriented health information to the general public."
+What is the 'Cochrane Library' used for in healthcare informatics?,Accessing systematic reviews to support evidence-based medicine and clinical decision making.
+What is the purpose of 'Standardisation' in health data acquisition?,"To ensure that data collected from different sources is comparable, accurate, and relevant."
+What is 'Electronic Data Interchange' (EDI)?,The structured exchange of business data between organisations in a computer-processable format.
+What is 'Cloud Computing' in the context of an HIS?,A virtual system for storing and accessing information over the Internet instead of on local hardware.
+What is 'Data Verification'?,The process of meticulously checking gathered data for accuracy and validity before it is processed.
+Define 'Information Literacy'.,"The ability to recognise when information is needed and to locate, evaluate, and effectively use it."
+What is 'Evidence-Based Practice' (EBP)?,The integration of individual clinical expertise with the best available research evidence and patient values.
