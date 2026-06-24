@@ -7,32 +7,78 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="app-header">
-      <div>
-        <p class="eyebrow">Plan</p>
+    <div id="app-shell" class="app-shell is-mobile-menu">
+      <header class="app-header" id="app-header">
+        <button type="button" class="home-overview-btn" id="homeBtn" aria-label="Back to course overview">
+          <span class="home-overview-btn__media">
+            <span class="home-overview-btn__fallback" aria-hidden>⊕</span>
+          </span>
+          <span class="home-overview-btn__label">Course overview</span>
+        </button>
         <h1>Information Processing</h1>
-      </div>
-      <p class="header-copy">
-        Choose a class on the left, then open the video, podcast, infographic, or questions.
-      </p>
-    </header>
+        <a
+          class="progress-link progress-link--header"
+          href="https://progress-azure-five.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Progress →
+        </a>
+      </header>
 
-    <main class="layout">
-      <aside class="tree-panel" aria-label="Classes">
-        <nav id="tree" class="tree"></nav>
-      </aside>
-
-      <section class="content-panel" aria-live="polite">
-        <div id="content" class="content-card">
-          <p class="eyebrow">Welcome</p>
-          <h2>Select a class</h2>
-          <p>
-            Select one of the five classes on the left. Then choose the resource you
-            want to open in this panel.
-          </p>
+      <div class="mobile-lesson-bar" id="mobileBar" hidden>
+        <button type="button" class="mobile-menu-back" id="mobileMenuBack">← Menu</button>
+        <div class="mobile-lesson-bar__text">
+          <span class="mobile-lesson-bar__chapter" id="mobileChapter"></span>
+          <span class="mobile-lesson-bar__sub" id="mobileSub"></span>
         </div>
-      </section>
-    </main>
+      </div>
+
+      <main class="layout">
+        <div class="sidebar-column">
+          <aside class="tree-panel" aria-label="Classes">
+            <nav id="tree" class="tree"></nav>
+            <a
+              class="progress-link progress-link--sidebar"
+              href="https://progress-azure-five.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              My progress →
+            </a>
+          </aside>
+        </div>
+
+        <section class="content-panel" aria-live="polite">
+          <div id="content" class="content-card">
+            <div class="overview-panel">
+              <div class="overview-intro">
+                <p class="overview-lead">
+                  Five classes on health information systems, records, privacy, databases and data
+                  mining — each with video, podcast, infographic and questions.
+                </p>
+                <ul class="overview-systems" id="overviewList" aria-label="Course classes"></ul>
+              </div>
+              <p class="overview-hint">
+                Open a coloured class on the left, then choose the resource you want to view.
+              </p>
+              <p class="overview-progress">
+                Already enrolled?
+                <a
+                  class="progress-link progress-link--inline"
+                  href="https://progress-azure-five.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  My progress →
+                </a>
+              </p>
+              <button type="button" class="mobile-browse-btn" id="mobileBrowseBtn">Browse classes →</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <script src="app.js"></script>
   </body>
