@@ -187,6 +187,21 @@ export async function runAccessGate() {
   shellEl.hidden = true;
   gateEl.hidden = true;
 
+  function updateProgressLinks() {
+    document.querySelectorAll(".progress-link").forEach((link) => {
+      link.href = PROGRESS_URL;
+    });
+  }
+
+  if (config.openAccess) {
+    accessGranted = true;
+    gateEl.hidden = true;
+    gateEl.replaceChildren();
+    shellEl.hidden = false;
+    updateProgressLinks();
+    return true;
+  }
+
   const hasHandoff = new URLSearchParams(window.location.search).has("studio9_handoff");
   if (!hasHandoff) {
     renderGate(gateEl, { type: "loading" });
@@ -209,12 +224,6 @@ export async function runAccessGate() {
   await trySessionHandoff(auth).catch(() => undefined);
 
   let loginState = { error: null, submitting: false, sent: false, email: "" };
-
-  function updateProgressLinks() {
-    document.querySelectorAll(".progress-link").forEach((link) => {
-      link.href = PROGRESS_URL;
-    });
-  }
 
   function addAccountBar(email) {
     const header = document.getElementById("app-header");

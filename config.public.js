@@ -3,6 +3,7 @@ window.STUDIO9_CONFIG = {
   "firebaseAuthDomain": "",
   "firebaseProjectId": "",
   "firebaseAppId": "",
+  "openAccess": true,
   "packageId": "information-processing",
   "appTitle": "Information Processing",
   "storeUrl": "https://medical-science-lilac.vercel.app/precos/",
