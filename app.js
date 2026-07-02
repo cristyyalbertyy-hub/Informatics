@@ -614,13 +614,15 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-renderOverviewList();
-renderTree();
-setShellMode();
+export function init() {
+  renderOverviewList();
+  renderTree();
+  setShellMode();
 
-document.querySelector("#homeBtn")?.addEventListener("click", () => {
-  openMobileMenu();
-  renderHome();
-});
-document.querySelector("#mobileMenuBack")?.addEventListener("click", openMobileMenu);
-document.querySelector("#mobileBrowseBtn")?.addEventListener("click", openMobileMenu);
+  document.querySelector("#homeBtn")?.addEventListener("click", () => {
+    openMobileMenu();
+    renderHome();
+  });
+  document.querySelector("#mobileMenuBack")?.addEventListener("click", openMobileMenu);
+  document.querySelector("#mobileBrowseBtn")?.addEventListener("click", openMobileMenu);
+}

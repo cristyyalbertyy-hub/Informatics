@@ -1,0 +1,27 @@
+const fs = require("fs");
+const path = require("path");
+
+function env(name, fallback = "") {
+  return (process.env[name] || fallback).trim();
+}
+
+const packageId = env("VITE_PACKAGE_ID", "information-processing");
+
+const cfg = {
+  firebaseApiKey: env("VITE_FIREBASE_API_KEY"),
+  firebaseAuthDomain: env("VITE_FIREBASE_AUTH_DOMAIN"),
+  firebaseProjectId: env("VITE_FIREBASE_PROJECT_ID"),
+  firebaseAppId: env("VITE_FIREBASE_APP_ID"),
+  packageId,
+  appTitle: env("VITE_APP_TITLE", "Information Processing"),
+  storeUrl: env("VITE_STORE_URL", "https://medical-science-lilac.vercel.app/precos/"),
+  progressUrl: env(
+    "VITE_PROGRESS_URL",
+    `https://progress-azure-five.vercel.app/?package=${packageId}`,
+  ),
+};
+
+const out = `window.STUDIO9_CONFIG = ${JSON.stringify(cfg, null, 2)};\n`;
+const target = path.join(__dirname, "..", "config.public.js");
+fs.writeFileSync(target, out, "utf8");
+console.log("Wrote", target);

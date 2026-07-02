@@ -1,0 +1,7 @@
+{
+  "name": "information-processing",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/write-config.js"
+  }
+}
