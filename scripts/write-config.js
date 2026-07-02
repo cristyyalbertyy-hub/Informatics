@@ -12,6 +12,7 @@ const cfg = {
   firebaseAuthDomain: env("VITE_FIREBASE_AUTH_DOMAIN"),
   firebaseProjectId: env("VITE_FIREBASE_PROJECT_ID"),
   firebaseAppId: env("VITE_FIREBASE_APP_ID"),
+  openAccess: env("VITE_OPEN_ACCESS", "true") === "true",
   packageId,
   appTitle: env("VITE_APP_TITLE", "Information Processing"),
   storeUrl: env("VITE_STORE_URL", "https://medical-science-lilac.vercel.app/precos/"),
