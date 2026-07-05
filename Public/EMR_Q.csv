@@ -26,7 +26,7 @@ How can EHRs improve patient safety regarding prescriptions?,By using automated 
 What is the 'Foundation of Knowledge' model's role in health informatics?,"It serves as the conceptual framework for understanding how data, information, knowledge, and wisdom are used in practice."
 "In the DIKW paradigm used in informatics, what does the 'W' represent?",Wisdom.
 Term: Electronic Medical Record (EMR),"Definition: A digital version of a patient's paper chart in a clinician's office, primarily used for diagnosis and treatment within one organisation."
-Which standardised coding system is commonly used in EHRs for classifying diseases and health problems?,The International Classification of Diseases ($ICD$).
+Which standardised coding system is commonly used in EHRs for classifying diseases and health problems?,The International Classification of Diseases (ICD).
 What is the function of an 'Interface Engine' in an EHR system?,It filters and translates data from multiple sources into a common format for deposit into the EHR repository.
 How do EHRs facilitate 'Information Therapy' for consumers?,"By providing personalised, high-quality health information that empowers patients to manage their own well-being."
 What is a 'Personal Health Record' (PHR)?,An electronic record of health-related information that is managed and controlled by the individual patient.

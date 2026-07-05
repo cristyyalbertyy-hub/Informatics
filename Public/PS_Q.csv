@@ -24,7 +24,7 @@ The principle of _____ requires organisations to make specific information about
 "In e-health informatics, what term describes the theory and practice of integrating electronic health information distributed across different databases?",E-health data integration (e-HDI).
 "In the context of e-HDI, what does an 'aggregation issue' refer to?",Instances where two or more data sets are more sensitive together than they are separately.
 Which specific aggregation type occurs when the sensitivity of data depends on the existing information already at a user's disposal?,Context-dependent aggregation.
-"_____ aggregation occurs when a collection of up to $t$ objects is not sensitive, but a collection greater than $t$ is sensitive.",Quantity-dependent
+"_____ aggregation occurs when a collection of up to t objects is not sensitive, but a collection greater than t is sensitive.",Quantity-dependent
 Which aggregation type involves sensitivity that arises when information is linked to a particular period of time?,Time-dependent aggregation.
 What is functionality-dependent aggregation?,A situation where sensitive information can be inferred via the presence of other non-sensitive attributes.
 What is the purpose of 'sanitization' in health data management?,Disguising a subject's information to prevent the discovery of their identity.

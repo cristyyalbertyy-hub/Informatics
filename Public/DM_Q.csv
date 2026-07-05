@@ -11,16 +11,16 @@ Term: Clustering Analysis,Definition: An unsupervised learning process for parti
 Why is clustering considered an 'undirected' knowledge discovery technique?,Because it is used to discover internal structures in data without pre-defined classes or outcomes.
 What is 'Neural Networks' in the context of data mining tools?,A technique used to identify patterns by mimicking the way the human brain processes information.
 Define 'Rule Induction' as a data mining technique.,The process of extracting 'if-then' rules from a dataset based on statistical significance.
-What is the '$k$-nearest neighbor' method?,A technique that classifies each record in a dataset based on the characteristics of a select number of similar surrounding records.
+What is the 'k-nearest neighbor' method?,A technique that classifies each record in a dataset based on the characteristics of a select number of similar surrounding records.
 Concept: Bagging,Definition: The use of voting and averaging in predictive data mining to synthesise predictions from multiple models or different data sets.
 What is 'Stacking' (or stacked generalisation)?,A technique that synthesises the predictions from several different models to improve accuracy.
 "In data mining, what does 'Scoring' refer to?",Applying a model developed from a known outcome to a new situation where the outcome is unknown.
 What is 'Drill-down' capability in a data warehouse?,"The ability of a user to view information at lower, more detailed levels of the database."
 Define 'Text Mining'.,The analysis of unstructured text files by extracting key words or phrases to identify trends or patterns.
 What is Online Analytic Processing (OLAP)?,"A tool used to generate different multidimensional views of data, allowing for complex analysis and 'slicing and dicing' of information."
-Term: Brushing,Definition: A technique where a user manually chooses specific data points on an interactive display to visualise them in $2$D or $3$D plots.
+Term: Brushing,Definition: A technique where a user manually chooses specific data points on an interactive display to visualise them in 2D or 3D plots.
 How can data mining be used to detect healthcare fraud?,By using predictive analytics and artificial intelligence to identify unusual patterns in insurance claims.
-What is the 'Big Data to Knowledge' (BD2K) initiative?,An NIH project launched in $2013$ to support tools that maximise the integration of big data into biomedical research.
+What is the 'Big Data to Knowledge' (BD2K) initiative?,An NIH project launched in 2013 to support tools that maximise the integration of big data into biomedical research.
 "In healthcare data mining, what is the 'Master Patient Index' used for?","To allow record sharing across different regions or settings, facilitating integrated data mining."
 What ethical requirement must be met when using private health information for data mining?,The data must be de-identified to maintain patient confidentiality.
 Define 'Anonymity' in the context of e-health data management.,Ensuring that users of aggregate data cannot access a subject's identity unless specifically authorised.
@@ -43,7 +43,7 @@ Why is 'Metadata' included in a processed data mining model?,"To store the name,
 What is 'Navigational Mining'?,The analysis of user navigation decisions on websites to extract knowledge about trends or interests.
 "In the 'Foundation of Knowledge' model, data mining primarily supports which process?",Knowledge generation.
 How can data mining help reduce 'Medical Errors'?,By identifying patterns in drug ordering that lead to adverse events and suggesting safer alternatives.
-What is the significance of the '$k$' in $k$-nearest neighbor analysis?,It represents the pre-defined number of similar neighbors used to classify a specific record.
+What is the significance of the 'k' in k-nearest neighbor analysis?,It represents the pre-defined number of similar neighbors used to classify a specific record.
 Define 'Case-based reasoning' as a data mining tool.,An analogical reasoning method that solves new problems by referencing similar past cases.
 How does 'Genetic Algorithms' contribute to data mining?,They use mechanisms inspired by biological evolution (like mutation and crossover) to find optimal solutions in data.
 What does the term 'Dirty Data' refer to in database management?,"Records that are duplicate, incomplete, or outdated, which can lead to flawed statistical conclusions."
