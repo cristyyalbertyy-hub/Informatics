@@ -442,6 +442,13 @@ function getSuffixes(type) {
   return [type];
 }
 
+function protectMediaDownloads(root) {
+  root.querySelectorAll("video, audio").forEach((el) => {
+    el.setAttribute("controlsList", "nodownload");
+    el.addEventListener("contextmenu", (event) => event.preventDefault());
+  });
+}
+
 function renderMediaResource(topic, resource, path, backOptions = {}) {
   const extension = path.split(".").pop().toLowerCase();
   const title = `${topic.title} — ${resource.label}`;
@@ -452,14 +459,14 @@ function renderMediaResource(topic, resource, path, backOptions = {}) {
 
   if (resource.type === "V") {
     body = `
-      <video class="media" controls>
+      <video class="media" controls controlsList="nodownload" playsinline>
         <source src="${path}" type="video/${extension}">
         Your browser does not support HTML5 video.
       </video>
     `;
   } else if (resource.type === "P") {
     body = `
-      <audio class="media" controls src="${path}">
+      <audio class="media" controls controlsList="nodownload" src="${path}">
         Your browser does not support HTML5 audio.
       </audio>
     `;
@@ -479,6 +486,7 @@ function renderMediaResource(topic, resource, path, backOptions = {}) {
   `;
 
   bindBackButton(topic, backOptions.onBack);
+  protectMediaDownloads(contentElement);
 }
 
 function renderVideoChoices(topic, resource, paths) {
