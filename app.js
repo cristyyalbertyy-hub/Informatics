@@ -1,5 +1,4 @@
 const PUBLIC_DIR = "Public";
-const STUDENT_PROGRESS_URL = "https://progress-azure-five.vercel.app/";
 
 const topics = [
   {
@@ -160,10 +159,6 @@ function renderHome() {
       </div>
       <p class="overview-hint">
         Open a coloured class on the left, then choose the resource you want to view.
-      </p>
-      <p class="overview-progress">
-        Already enrolled?
-        <a class="progress-link progress-link--inline" href="${STUDENT_PROGRESS_URL}" target="_blank" rel="noopener noreferrer">My progress →</a>
       </p>
       <button type="button" class="mobile-browse-btn" id="mobileBrowseBtnInner">Browse classes →</button>
     </div>

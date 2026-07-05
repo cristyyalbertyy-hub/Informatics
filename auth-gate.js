@@ -22,9 +22,6 @@ import {
 
 const config = window.STUDIO9_CONFIG || {};
 const PACKAGE_ID = config.packageId || "information-processing";
-const PROGRESS_URL =
-  config.progressUrl ||
-  `https://progress-azure-five.vercel.app/?package=${PACKAGE_ID}`;
 const STORE_URL =
   config.storeUrl || "https://medical-science-lilac.vercel.app/precos/";
 const ACCOUNT_URL =
@@ -97,7 +94,7 @@ async function fetchActiveEntitlement(db, userId) {
   return data;
 }
 
-/** @type {{ auth: import('firebase/auth').Auth, db: import('firebase/firestore').Firestore, user: import('firebase/auth').User, packageId: string, progressUrl: string } | null} */
+/** @type {{ auth: import('firebase/auth').Auth, db: import('firebase/firestore').Firestore, user: import('firebase/auth').User, packageId: string } | null} */
 let studio9Session = null;
 /** @type {boolean} */
 let accessGranted = false;
@@ -187,18 +184,11 @@ export async function runAccessGate() {
   shellEl.hidden = true;
   gateEl.hidden = true;
 
-  function updateProgressLinks() {
-    document.querySelectorAll(".progress-link").forEach((link) => {
-      link.href = PROGRESS_URL;
-    });
-  }
-
   if (config.openAccess) {
     accessGranted = true;
     gateEl.hidden = true;
     gateEl.replaceChildren();
     shellEl.hidden = false;
-    updateProgressLinks();
     return true;
   }
 
@@ -244,15 +234,8 @@ export async function runAccessGate() {
 
     const actions = document.createElement("div");
     actions.className = "app-header__actions";
-    const progress = header.querySelector(".progress-link--header");
-    if (progress) {
-      actions.appendChild(wrap);
-      actions.appendChild(progress);
-      progress.remove();
-      header.appendChild(actions);
-    } else {
-      header.appendChild(wrap);
-    }
+    actions.appendChild(wrap);
+    header.appendChild(actions);
   }
 
   function revealApp(user) {
@@ -265,10 +248,8 @@ export async function runAccessGate() {
       db,
       user,
       packageId: PACKAGE_ID,
-      progressUrl: PROGRESS_URL,
     };
     addAccountBar(user.email || "");
-    updateProgressLinks();
   }
 
   async function refreshEntitlementCheck() {
