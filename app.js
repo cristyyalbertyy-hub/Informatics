@@ -1,4 +1,5 @@
 const PUBLIC_DIR = "Public";
+const OVERVIEW_IMAGE = `${PUBLIC_DIR}/IP.png`;
 
 const topics = [
   {
@@ -157,6 +158,11 @@ function renderHome() {
             .join("")}
         </ul>
       </div>
+      <img
+        class="overview-infographic"
+        src="${OVERVIEW_IMAGE}"
+        alt="Information Processing — course overview"
+      />
       <p class="overview-hint">
         Open a coloured class on the left, then choose the resource you want to view.
       </p>
