@@ -1,5 +1,5 @@
 const PUBLIC_DIR = "Public";
-const OVERVIEW_IMAGE = `${PUBLIC_DIR}/IP.png`;
+const OVERVIEW_IMAGE = `${PUBLIC_DIR}/IPA.png`;
 
 const topics = [
   {
