@@ -626,6 +626,7 @@ function escapeHtml(value) {
 export function init() {
   renderOverviewList();
   renderTree();
+  renderHome();
   setShellMode();
 
   document.querySelector("#homeBtn")?.addEventListener("click", () => {
