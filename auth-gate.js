@@ -54,10 +54,17 @@ function cleanEmailLinkFromUrl() {
 
 async function trySessionHandoff(auth) {
   const params = new URLSearchParams(window.location.search);
+  const launchEmail = params.get("studio9_email")?.trim();
+  if (launchEmail) {
+    sessionStorage.setItem("studio9.displayEmail", launchEmail);
+    sessionStorage.setItem("studio9_from_conta", "1");
+  }
   const token = params.get("studio9_handoff");
   if (!token) return;
   await signInWithCustomToken(auth, token);
   params.delete("studio9_handoff");
+  params.delete("studio9_email");
+  params.delete("studio9_open");
   const rest = params.toString();
   window.history.replaceState(
     null,
@@ -227,6 +234,8 @@ export async function runAccessGate() {
     wrap.querySelector("button")?.addEventListener("click", () => {
       studio9Session = null;
       accessGranted = false;
+      sessionStorage.removeItem("studio9.displayEmail");
+      sessionStorage.removeItem("studio9_from_conta");
       void signOut(auth).then(() => {
         window.location.assign(ACCOUNT_URL);
       });
@@ -249,7 +258,9 @@ export async function runAccessGate() {
       user,
       packageId: PACKAGE_ID,
     };
-    addAccountBar(user.email || "");
+    addAccountBar(
+      user.email || sessionStorage.getItem("studio9.displayEmail") || "",
+    );
   }
 
   async function refreshEntitlementCheck() {
