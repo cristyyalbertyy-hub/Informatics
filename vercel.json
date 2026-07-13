@@ -5,7 +5,7 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/((?!styles\\.css|config\\.public\\.js|auth-gate\\.js|main\\.js|app\\.js|Public/).*)",
+      "source": "/((?!styles\\.css|config\\.public\\.js|auth-gate\\.js|main\\.js|app\\.js|favicon\\.svg|Public/).*)",
       "destination": "/index.html"
     }
   ]
