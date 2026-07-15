@@ -73,6 +73,20 @@ async function trySessionHandoff(auth) {
   );
 }
 
+function getDisplayEmail() {
+  const fromSession = sessionStorage.getItem("studio9.displayEmail")?.trim();
+  if (fromSession) return fromSession;
+  return new URLSearchParams(window.location.search).get("studio9_email")?.trim() || "";
+}
+
+function persistLaunchEmailFromUrl() {
+  const launchEmail = new URLSearchParams(window.location.search).get("studio9_email")?.trim();
+  if (!launchEmail) return "";
+  sessionStorage.setItem("studio9.displayEmail", launchEmail);
+  sessionStorage.setItem("studio9_from_conta", "1");
+  return launchEmail;
+}
+
 async function fetchActiveEntitlement(db, userId) {
   const directRef = doc(db, "entitlements", `${userId}_${PACKAGE_ID}`);
   const directSnap = await getDoc(directRef);
@@ -196,6 +210,36 @@ export async function runAccessGate() {
     gateEl.hidden = true;
     gateEl.replaceChildren();
     shellEl.hidden = false;
+    persistLaunchEmailFromUrl();
+
+    if (isConfigured()) {
+      const app = initializeApp({
+        apiKey: config.firebaseApiKey,
+        authDomain: config.firebaseAuthDomain,
+        projectId: config.firebaseProjectId,
+        appId: config.firebaseAppId,
+      });
+      const auth = getAuth(app);
+      const db = getFirestore(app);
+      await setPersistence(auth, browserLocalPersistence);
+      await trySessionHandoff(auth).catch(() => undefined);
+
+      const user = auth.currentUser;
+      if (user) {
+        studio9Session = {
+          auth,
+          db,
+          user,
+          packageId: PACKAGE_ID,
+        };
+        mountAccountBar(user.email || getDisplayEmail(), auth);
+      } else {
+        mountAccountBar(getDisplayEmail(), auth);
+      }
+    } else {
+      mountAccountBar(getDisplayEmail(), null);
+    }
+
     return true;
   }
 
@@ -222,23 +266,30 @@ export async function runAccessGate() {
 
   let loginState = { error: null, submitting: false, sent: false, email: "" };
 
-  function addAccountBar(email) {
+  function mountAccountBar(email, auth) {
+    const displayEmail = (email || getDisplayEmail()).trim();
+    if (!displayEmail) return;
+
     const header = document.getElementById("app-header");
     if (!header || header.querySelector(".auth-account")) return;
 
     const wrap = document.createElement("div");
     wrap.className = "auth-account";
     wrap.innerHTML =
-      `<span class="auth-account__email" title="${escapeHtml(email)}">${escapeHtml(email)}</span>` +
+      `<span class="auth-account__email" title="${escapeHtml(displayEmail)}">${escapeHtml(displayEmail)}</span>` +
       `<button type="button" class="btn-ghost">Sair</button>`;
     wrap.querySelector("button")?.addEventListener("click", () => {
       studio9Session = null;
       accessGranted = false;
       sessionStorage.removeItem("studio9.displayEmail");
       sessionStorage.removeItem("studio9_from_conta");
-      void signOut(auth).then(() => {
-        window.location.assign(ACCOUNT_URL);
-      });
+      if (auth) {
+        void signOut(auth).then(() => {
+          window.location.assign(ACCOUNT_URL);
+        });
+        return;
+      }
+      window.location.assign(ACCOUNT_URL);
     });
 
     const actions = document.createElement("div");
@@ -258,8 +309,9 @@ export async function runAccessGate() {
       user,
       packageId: PACKAGE_ID,
     };
-    addAccountBar(
+    mountAccountBar(
       user.email || sessionStorage.getItem("studio9.displayEmail") || "",
+      auth,
     );
   }
 

@@ -437,6 +437,13 @@ button {
     padding-top: 4.5rem;
   }
 
+  .app-header__actions {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 0.65rem;
+  }
+
   .app-header--compact-mobile {
     display: none;
   }
@@ -652,8 +659,11 @@ button {
 }
 
 .app-header__actions {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-left: auto;
 }
