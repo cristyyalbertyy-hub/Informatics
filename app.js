@@ -206,7 +206,7 @@ function renderTree() {
   });
 }
 
-function showTopic(topic) {
+function showTopicResources(topic) {
   state.atHome = false;
   state.activeTopicCode = topic.code;
   state.activeResourceType = null;
@@ -241,6 +241,22 @@ function showTopic(topic) {
     const resource = resources.find((item) => item.type === button.dataset.resource);
     button.addEventListener("click", () => openResource(topic, resource));
   });
+}
+
+function showTopic(topic) {
+  state.atHome = false;
+  state.activeTopicCode = topic.code;
+  closeMobileMenu();
+  setActiveTopicButton(topic.code);
+  contentElement.dataset.tint = topic.code;
+  contentElement.setAttribute("data-tint", topic.code);
+
+  const videoResource = resources.find((item) => item.type === "V");
+  if (videoResource) {
+    void openResource(topic, videoResource);
+  } else {
+    showTopicResources(topic);
+  }
 }
 
 async function openResource(topic, resource) {
@@ -547,7 +563,7 @@ function renderBackButtonHtml(label = "Back to resources") {
   `;
 }
 
-function bindBackButton(topic, onBack = () => showTopic(topic)) {
+function bindBackButton(topic, onBack = () => showTopicResources(topic)) {
   const backButton = document.querySelector("#backToResources");
 
   if (backButton) {
