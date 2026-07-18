@@ -1,3 +1,7 @@
+import { getStudio9Session } from "./auth-gate.js";
+import { recordWatchComplete, progressDocId } from "./progress-client.js";
+import { bindPlaybackProgress } from "./playback-progress.js";
+
 const PUBLIC_DIR = "Public";
 const OVERVIEW_IMAGE = `${PUBLIC_DIR}/IPA.png`;
 
@@ -471,6 +475,42 @@ function protectMediaDownloads(root) {
   });
 }
 
+async function trackMediaComplete(topic, resourceType) {
+  const session = getStudio9Session();
+  if (!session?.user || !session.db || !topic?.code) return;
+  if (resourceType !== "V" && resourceType !== "P") return;
+
+  try {
+    const level = await recordWatchComplete(
+      session.db,
+      session.user.uid,
+      session.packageId,
+      topic.code,
+      resourceType,
+    );
+    console.info("Progress saved:", {
+      packageId: session.packageId,
+      itemKey: topic.code,
+      resource: resourceType,
+      level,
+    });
+  } catch (err) {
+    console.warn("Could not save watch progress:", {
+      id: progressDocId(session.user.uid, session.packageId, topic.code, resourceType),
+      packageId: session.packageId,
+      itemKey: topic.code,
+      resource: resourceType,
+      err,
+    });
+  }
+}
+
+function attachPlaybackProgress(root, topic, resourceType) {
+  root.querySelectorAll("video, audio").forEach((el) => {
+    bindPlaybackProgress(el, () => void trackMediaComplete(topic, resourceType));
+  });
+}
+
 function renderMediaResource(topic, resource, path, backOptions = {}) {
   const extension = path.split(".").pop().toLowerCase();
   const title = `${topic.title} — ${resource.label}`;
@@ -509,6 +549,9 @@ function renderMediaResource(topic, resource, path, backOptions = {}) {
 
   bindBackButton(topic, backOptions.onBack);
   protectMediaDownloads(contentElement);
+  if (resource.type === "V" || resource.type === "P") {
+    attachPlaybackProgress(contentElement, topic, resource.type);
+  }
 }
 
 function renderVideoChoices(topic, resource, paths) {
