@@ -1,5 +1,5 @@
-import { initializeApp } from "https://esm.sh/firebase@12.15.0/app";
 import {
+  initializeApp,
   getAuth,
   onAuthStateChanged,
   sendSignInLinkToEmail,
@@ -9,8 +9,6 @@ import {
   signInWithCustomToken,
   setPersistence,
   browserLocalPersistence,
-} from "https://esm.sh/firebase@12.15.0/auth";
-import {
   getFirestore,
   collection,
   query,
@@ -18,7 +16,7 @@ import {
   getDocs,
   doc,
   getDoc,
-} from "https://esm.sh/firebase@12.15.0/firestore";
+} from "./firebase-client.js";
 
 const config = window.STUDIO9_CONFIG || {};
 const PACKAGE_ID = config.packageId || "information-processing";

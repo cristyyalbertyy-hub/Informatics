@@ -1,4 +1,4 @@
-import { doc, getDoc, setDoc } from "https://esm.sh/firebase@12.15.0/firestore";
+import { doc, getDoc, setDoc } from "./firebase-client.js";
 
 export const AUTO_RESOURCES = ["V", "P"];
 export const MAX_PROGRESS_LEVEL = 3;
